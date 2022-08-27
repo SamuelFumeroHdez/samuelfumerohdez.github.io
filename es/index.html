@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Samuel Fumero | Portafolio</title>
+</head>
+<body>
+
+    <div class="wrapper ">
+        <header> 
+            <nav class="navbar">
+                <div class="brand">
+                    <h2 class="title">S<span>F</span></h2>
+                </div>
+                <div class="navbar-items">
+                    <ul class="menu">
+                        <li class="active" ><a href="#home-section">Home</a></li>
+                        <li><a href="#about-section">Sobre mí</a></li>
+                        <li><a href="#portfolio-section">Portafolio</a></li>
+                        <li><a href="#contact-section">Contacto</a></li>
+                    </ul> 
+                    <div class="flags">
+                        <a href="es/index.html"><img src="../img/spanish.png" /> </a>
+                        <a href="../index.html"><img src="../img/eeuu.png" /> </a>
+                    </div>
+                </div>
+                
+            </nav>
+            
+        </header>
+        <main class="main" id="home-section">
+            <div class="info-content" >
+                <h1>Soy <span>Samuel</span> Fumero</h1>
+                <p>Hola mundo! Bienvenido a mi sitio web. 
+                    Aquí encontrarás toda la información que necesitas para conocerme y poder contactar conmigo si quieres proponerme un proyecto. 
+                    También he incluido un portafolio para que puedas echar un vistazo a mis conocimientos y tecnologías que he usado.
+                    Espero que disfrutes la visita a mi web ;)</p>
+                <a download="" href="#">
+                    <button class="download-cv">Descargar CV</button>
+                </a>
+            </div>
+            <img src="../img/homeByN.png" alt="Samuel Fumero home picture" />
+        </main>
+    </div>
+
+    <div class="about" id="about-section">
+        <img src="../img/computer.jpg" alt="about Samuel Fumero piture"/>
+    
+        <div class="about-info">
+            <h2>Sobre mí</h2>
+            <div class="divider">
+
+            </div>
+            
+            <p>Como toda la gente de Tenerife, me encanta el mar, el buen tiempo y la tranquilidad.
+                Mi pasión por las ciencias de la computación empezó desde muy joven, cuando no era capaz de imaginarme cómo era posible que aquella simple caja pudiera realizar tantas coasas increíbles como simular un mundo complejo, comunicarse con alguien del otro lado del mundo de manera instantánea, etc.
+            </p>
+            <div class="hide spanish" id="about">
+                <p>
+                    Para resolver todas mis preguntas, y poder transformar todas aquellas cosas de "mágico" a "normal", decidí comenzar mis estudios en ingeniería informática. 
+                    Mi experiencia en la titulación fue, por lo general, satisfactoria y pude abrir esa "caja negra" y comprender todos los conceptos necesarios para saber cómo realizar software.
+                </p>
+                <p>
+                    En los últimos años de mis estudios, me especialicé en Ingeniería del Software, esto me permitió abstraerme del proceso concreto de "picar código" para entender y estructurar problemas a un nivel más alto. 
+                    También me ha permitido obtener conocimeintos sobre las herramientas de gestión de proyectos de software más usadas en el mercado 
+                </p>
+                <p>
+                    Actualmente trabajo como desarrollador Java en un proyecto con IBM y el Banco Santander. Adicionalmente, estoy constantemente actulizando conocimientos a través de plataformas de cursos online.
+                </p>
+            </div>
+            
+            <button class="download-cv toggle-about-button" onclick="toggleShow()">Leer más</button>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio-section">
+        <div class="portfolio-headings">
+            <h2>Mi portafolio</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container">
+            
+            <div class="card">
+                <div class="card__img">
+                </div>
+                <div class="card__container">
+                    <div class="card__title">
+                        <h2>Logística Terrestre</h2>
+                    </div>
+                    <div class="card__description">
+                        <p>Con una flota de vehículos de doferentes pesos, cada vehículo es capaz de llegar a su punto de destino desde un origen calculando el camino más corto aplicando el algoritmo de Inteligencia Artificial A*. Se integra con Sonar</p>
+                    </div>
+                    <div class="card__projects-links">
+                        <!--<button class="project-details download-cv">
+                            Detalles del proyecto
+                        </button>-->
+                        <a href="#">
+                            <img src="../img/icons8-github-60.png"/>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card__img__twitter">
+                </div>
+                <div class="card__container">
+                    <div class="card__title">
+                        <h2>Twitter Observer</h2>
+                    </div>
+                    <div class="card__description">
+                        <p>Proyecto que muestra las principales tendencias en Twitter en cada país pudiendo elegir países como España, Estados Unidos o México. Se puede realizar estos análisis usando diferentes tipos de gráficos.</p>
+                    </div>
+                    <div class="card__projects-links">
+                        <!--<button class="project-details download-cv">
+                            Detalles del proyecto
+                        </button>-->
+                        <a href="#">
+                            <img src="../img/icons8-github-60.png"/>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card__img__covid">
+                </div>
+                <div class="card__container">
+                    <div class="card__title">
+                        <h2>Covid-19 Tracker</h2>
+                    </div>
+                    <div class="card__description">
+                        <p>Con este proyecto podrás seleccionar un país y echar un vistazo, mediante gráficas su evolución de fallecidos, afectados, curados, etc. a causa de la Covid-19. También puedes reañizar una comparación entre varios paises al mismo tiempo</p>
+                    </div>
+                    <div class="card__projects-links">
+                        <!--<button class="project-details download-cv">
+                            Detalles del proyecto
+                        </button>-->
+                        <a href="#">
+                            <img src="../img/icons8-github-60.png"/>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section" id="contact-section">
+        <div class="contact-headings">
+            <h2>Contacto</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="container-contact">
+            <div class="emojis-container">
+                <div class="contact-emojis">
+                    <img src="../img/chat.png" alt="Samuel Fumero contact picture" class="contact-img" />
+                    <img src="../img/mail.png" alt="Samuel Fumero contact picture" class="contact-img" />
+                    
+                </div>
+                <div class="mobile-emoji">
+                    <img src="../img/phone.png" alt="Samuel Fumero contact picture" class="contact-img" />
+                </div>
+            </div>
+            <div class="contact-form">
+                <h4>Envíame un mensaje...</h4>
+                <form class="form" 
+                action="https://formspree.io/f/xaykylke"
+                method="POST"
+                >
+                    <input type="text" placeholder="Nombre" name="name">
+                    <input type="email" placeholder="Correo" name="email">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Escribe aquí tu mensaje..." class="form-textarea">
+                    </textarea>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+                <a href="mailto:samuel.fumero.dev@gmail.com" style="opacity: 0" id="sendMail"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="go-top-container" onclick="subir_arriba()">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Samuel Fumero</h2>
+            <h5>Desarrollador de Software</h5>
+        </div>
+        <div class="social-network">
+            
+            
+            <a href="https://www.linkedin.com/in/samuelfumerohernandez/" target="_blank"><img src="../img/linkedin.png"/></a>
+            <a href="https://twitter.com/DevFumero" target="_blank"><img src="../img/twitter.png"/></a>
+        </div>
+    </footer>
+    <script>
+        const $form = document.querySelector('.form');
+        //const $buttonMailto = document.querySelector('#sendMail');
+        $form.addEventListener('submit', handleSubmit);
+        async function handleSubmit(event){
+            event.preventDefault();
+            const form = new FormData(this);
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            if(response.ok){
+                this.reset()
+                alert('Thank you for contacting me!')
+            }
+            $buttonMailto.setAttribute('href', `mailto:samuel.fumero.dev@gmail.com?subject=${form.get('email')}&body=${form.get('message')}`);
+            $buttonMailto.click();
+        }
+    </script>
+    <script src="../js/index.js"></script>
+    <script src="../js/up.js"></script>
+</body>
+</html>
